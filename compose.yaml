@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:10.8-alpine
+    ports: 
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: docker_pwd
+      POSTGRES_USER: docker_usr
+      POSTGRES_DB: curso_docker
